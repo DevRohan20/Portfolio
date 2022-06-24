@@ -18,9 +18,9 @@ const Projects = () => {
     >
       <main
         id="Projects"
-        className="bg-slate-800 w-full lg:-mt-20 text-white md:pl-12 lg:pb-80"
+        className="bg-slate-800 w-full text-slate-100 text-center lg:text-start md:text-center lg:-ml-10 mr-72 lg:pt-40 lg:pb-80 md:h-screen"
       >
-        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-start w-full h-full lg:ml-44">
           <div className="pb-8">
             <p className="text-4xl sm:text-5xl md:text-6xl font-bold inline border-b-4 border-gray-500">
               Projects

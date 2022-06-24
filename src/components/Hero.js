@@ -16,7 +16,7 @@ const Hero = () => {
       initial={"offScreen"}
       whileInView={"onScreen"}
       viewport={{ once: true, amount: 0.5 }}
-      className="bg-slate-800 pt-10 pb-20 lg:pt-32"
+      className="bg-slate-800 pt-10 lg:pt-32"
     >
       <motion.div
         variants={Animation}
