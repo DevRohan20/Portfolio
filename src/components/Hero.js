@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 import TextLoop from "react-text-loop";
 import { motion } from "framer-motion";
+import Modal from "./Modal"
 
 const Hero = () => {
   const Animation = {
     offScreen: { y: -100, opacity: 0 },
     onScreen: { y: 1, opacity: 1 },
   };
+
+  const [showModal, setShowModal] = useState(false);
+  const handleOnClose = () => setShowModal(false);
 
   return (
     <motion.div
@@ -27,12 +30,12 @@ const Hero = () => {
           alt="dp"
           height="200"
           width="200"
-          className="img-responsive mx-auto lg:mr-32 md: lg:mt-8"
+          className="img-responsive mx-auto lg:mr-32 md: lg:mt-8 md:ml-60"
           src="https://cdna.artstation.com/p/assets/images/images/021/553/786/large/pawel-mis-angryman2.jpg?1572121270"
         ></img>
       </motion.div>
       <main className="ml-20 mt-10 m-auto items-center justify-center pb-20 sm:m-12 sm:px-6 md:ml-40 lg:m-20 lg:px-8 xl:m-28">
-        <div className="mt-10 pb-20 mr-20 sm:text-center sm:ml-28 md:ml-3 lg:text-left">
+        <div className="mt-10 pb-20 mr-20 text-center xl:2xl:text-start sm:ml-28 md:ml-3 lg:text-left">
           <motion.h1
             variants={Animation}
             transition={{ delay: 4.5 }}
@@ -75,18 +78,20 @@ const Hero = () => {
               transition={{ delay: 6.5 }}
               className="rounded-md shadow"
             >
-              <Link
-                href="#"
+              <button
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-800 md:py-4 md:text-lg md:px-10"
+                onClick={() => {setShowModal(true)}}
               >
                 Hire Me
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                 </span>
-              </Link>
+              </button>
+              
             </motion.div>
           </div>
         </div>
+        <Modal onClose={handleOnClose} visible={showModal}/>
       </main>
     </motion.div>
   );
