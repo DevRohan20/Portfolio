@@ -107,7 +107,7 @@ function Header() {
                 transition={{ delay: 1.5 }}
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="ml-5 bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="ml-5 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -130,7 +130,7 @@ function Header() {
                   </svg>
                 ) : (
                   <svg
-                    className="bg-slate-800/60 backdrop-filter backdrop-blur-lg h-6 w-6"
+                    className="h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -164,7 +164,7 @@ function Header() {
           <div className="md:hidden" id="mobile-menu">
             <div
               ref={ref}
-              className="bg-slate-800 px-2 pt-2 pb-3 space-y-1 sm:px-3"
+              className="absolute w-full bg-slate-800 px-2 pt-2 pb-3 space-y-1 sm:px-3"
             >
               <Link
                 activeClass="Home"

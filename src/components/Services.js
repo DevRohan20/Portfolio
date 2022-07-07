@@ -3,119 +3,126 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   const Animation = {
-    offScreen: { y: -100, opacity: 0 },
+    offScreen: { y: 100, opacity: 0 },
     onScreen: { y: 1, opacity: 1 },
   };
 
   return (
     <motion.div
-      id="Services"
+      className="container text-slate-100 h-screen"
       initial={"offScreen"}
       whileInView={"onScreen"}
       viewport={{ once: true, amount: 0.5 }}
       variants={Animation}
       transition={{ delay: 1 }}
-      className=" bg-slate-800 w-full text-slate-100 text-center lg:text-start md:text-center pt-20 lg:pt-36 h-fit"
+      id="Services"
     >
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:ml-40 font-bold inline border-b-4 border-gray-500">
-        Services
-      </h1>
-
-      <div className="relative w-full grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-10 text-center xl:pt-20 xl:pl-20 px-10 py-12 xl:px-40">
-        <div className="absolute w-40 h-40 bg-violet-500 rounded-full z-0 right-20 top-64 "></div>
-        <div className="absolute w-80 h-80 bg-violet-500 rounded-full z-0 right-20 bottom-32 "></div>
-        <div className="absolute w-60 h-60 bg-violet-500 rounded-full z-0 left-[280px] top-[550px] "></div>
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/cross-teams.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            For cross-domain teams
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-            Product features and capabilities meant for the different roles in
-            the next-decade team. Say goodbye to the legendary pain of the
-            design silo.
+      <div className="xl:px-28 md:pt-32">
+        <div className="absolute pb-8 z-10 xl:pl-5 pl-16 xl:pl-0 md:pl-80">
+          <p className="text-4xl sm:text-5xl md:text-6xl font-bold inline border-b-4 border-violet-500 xl:ml-6 md:-ml-10 ml-16">
+            Services
           </p>
-        </article>
+        </div>
+        <div className="absolute grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 xl:gap-x-48 md:gap-3 xl:w-full space-y-5 xl:space-y-8 pt-24 px-10 xl:px-20 xl:-ml-10">
+          <div className="absolute w-40 h-40 bg-slate-800 rounded-full z-0 xl:right-52 top-64 "></div>
+          <div className="absolute w-80 h-80 bg-slate-800 rounded-full z-0 xl:right-20 bottom-32 "></div>
+          <div className="absolute w-60 h-60 bg-slate-800 rounded-full z-0 xl:left-[280px] top-[550px] "></div>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/React.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              Frontend Development
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+              Creating web pages that will take your business to a professional
+              level. Your site will be responsive, optimized and flexible for
+              all users.
+            </p>
+          </article>
 
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/open-standards.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            With love and Open Standards
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center">
-            Using SVG as no other prototyping tool does, Penpot files sport
-            compatibility with most of the vectorial tools, are tech friendly
-            and extremely easy to use in web.
-          </p>
-        </article>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/Flutter.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              Cross Platform Apps
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center">
+              Providing you with native apps that can run on all platforms.
+              Making it possible using Google LLC's Flutter&trade; framework.
+              You can have uninterrupted and smooth experience with the apps
+              provided.
+            </p>
+          </article>
 
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/multi-platforms.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            Multiplatform
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-            Being web based, Penpot is not dependent on operating systems or
-            installations, you will only need to run a modern browser.
-          </p>
-        </article>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/uiux.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              UI/UX
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+              Giving you optimized and improved UI for the web and mobile
+              services you use. Making the user experience better and simpler.
+            </p>
+          </article>
 
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/multi-platforms.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            Multiplatform
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-            Being web based, Penpot is not dependent on operating systems or
-            installations, you will only need to run a modern browser.
-          </p>
-        </article>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/content writing.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              Web Content Creating
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+              The web gives huge opportunities for connecting with the world. No
+              better way to write to them about what interests you. Putting your
+              thoughts in words is just what you get.
+            </p>
+          </article>
 
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/multi-platforms.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            Multiplatform
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-            Being web based, Penpot is not dependent on operating systems or
-            installations, you will only need to run a modern browser.
-          </p>
-        </article>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/bugfix.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              Fixing Site Issues
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+              Making sure your web service is at it's peak while your taking
+              your business to new heights. Giving the code base the proper
+              optimization will do the trick. The solution to your problematic
+              site is just a tap away.
+            </p>
+          </article>
 
-        <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
-          <img
-            className="mx-auto w-full rounded-t-xl"
-            src="https://penpot.app/images/multi-platforms.webp"
-            alt=""
-          />
-          <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-            Multiplatform
-          </h2>
-          <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-            Being web based, Penpot is not dependent on operating systems or
-            installations, you will only need to run a modern browser.
-          </p>
-        </article>
+          <article className="mx-auto max-w-sm pb-8 bg-cover bg-center bg-slate-600 bg-opacity-50 backdrop-filter backdrop-blur-md cursor-auto transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+            <img
+              className="mx-auto w-full rounded-t-xl"
+              src={require("../assets/services/webapp.png")}
+              alt=""
+            />
+            <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
+              WebApp Development
+            </h2>
+            <p className="m-4 text-lg p-4 leading-relaxed text-center ">
+              Explore the possibility of more customers by taking your business
+              online. Making it easier for both you and your clients.
+            </p>
+          </article>
+        </div>
       </div>
     </motion.div>
   );

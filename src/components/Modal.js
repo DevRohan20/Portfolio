@@ -3,7 +3,6 @@ import { MdClose } from "react-icons/md";
 import { SiUpwork, SiFiverr } from "react-icons/si";
 import { motion } from "framer-motion";
 
-
 const Modal = ({ visible, onClose }) => {
   if (!visible) return null;
 
@@ -27,7 +26,7 @@ const Modal = ({ visible, onClose }) => {
       variants={Animation}
       transition={{ delay: 0.3 }}
     >
-      <div className="absolute flex flex-col bg-slate-700 text-center rounded-lg p-6 space-y-10 h-[530px] w-[500px]">
+      <div className="absolute flex flex-col bg-slate-700 text-center rounded-lg p-6 pb-16 space-y-3 xl:space-y-10 xl:h-[530px] xl:w-[500px]">
         <button
           type="button"
           onClick={onClose}
@@ -37,19 +36,29 @@ const Modal = ({ visible, onClose }) => {
         </button>
 
         <div className="pt-4">
-          <button className="relative divide-x bg-violet-500 py-8 px-6 rounded-xl inline-flex space-x-2 items-center">
-            <SiUpwork className="h-8 w-8 inline mt-2 mr-5 ml-5" />
-            <span className="inline pl-5">&nbsp;Connect with me on Upwork</span>
-          </button>
+          <a
+            href="https://www.upwork.com/workwith/shadmanarifrohan"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="relative divide-x bg-violet-500 py-8 px-6 rounded-xl inline-flex space-x-2 items-center">
+              <SiUpwork className="h-8 w-8 inline mt-2 mr-5 ml-5" />
+              <span className="inline pl-5">
+                &nbsp;Connect with me on Upwork
+              </span>
+            </button>
+          </a>
         </div>
 
         <div>Or,</div>
-        
+
         <div>
-          <button className="relative divide-x bg-violet-500 py-8 px-6 rounded-xl inline-flex space-x-2 items-center">
-            <SiFiverr className="h-20 w-20 inline -my-5 -mx-2 mr-5 ml-5" />
-            <span className="inline px-7">&nbsp;Hit me up on Fiverr</span>
-          </button>
+          <a href=" https://www.fiverr.com/rohanarif" target="_blank" rel="noreferrer">
+            <button className="relative divide-x bg-violet-500 py-8 px-6 rounded-xl inline-flex space-x-2 items-center">
+              <SiFiverr className="h-20 w-20 inline -my-5 -mx-2 mr-5 ml-5" />
+              <span className="inline px-7">&nbsp;Hit me up on Fiverr</span>
+            </button>
+          </a>
         </div>
       </div>
     </motion.div>
