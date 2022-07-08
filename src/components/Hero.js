@@ -31,11 +31,11 @@ const Hero = () => {
           alt="dp"
           height="350"
           width="350"
-          className="img-responsive mx-auto lg:mr-28 md:ml-40"
+          className="img-responsive mx-auto lg:mr-36 md:ml-40"
           src={require("../assets/profile-pic.png")}
         ></img>
       </motion.div>
-      <main className="ml-20 mt-10 m-auto items-center justify-center pb-20 sm:m-12 sm:px-6 md:ml-40 lg:m-20 lg:px-8 xl:m-28">
+      <main className="ml-20 mt-10 m-auto items-center justify-center pb-20 sm:m-12 sm:px-6 md:ml-40 lg:m-20 lg:px-8 xl:m-28 xl:pl-24">
         <div className="mt-10 pb-20 mr-20 text-center xl:2xl:text-start sm:ml-28 md:ml-3 lg:text-left">
           <motion.h1
             variants={Animation}

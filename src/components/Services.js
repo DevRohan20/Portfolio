@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <motion.div
-      className="container text-slate-100 h-screen"
+      className="container text-slate-100 h-screen w-screen xl:pr-48 xl:pl-44"
       initial={"offScreen"}
       whileInView={"onScreen"}
       viewport={{ once: true, amount: 0.5 }}
@@ -17,13 +17,13 @@ const Services = () => {
       transition={{ delay: 1 }}
       id="Services"
     >
-      <div className="xl:px-28 md:pt-32">
-        <div className="absolute pb-8 z-10 xl:pl-5 pl-16 xl:pl-0 md:pl-80">
+      <div className="md:pt-32">
+        <div className="absolute pb-8 z-10 xl:pl-10 pl-16 md:pl-80">
           <p className="text-4xl sm:text-5xl md:text-6xl font-bold inline border-b-4 border-violet-500 xl:ml-6 md:-ml-10 ml-16">
             Services
           </p>
         </div>
-        <div className="absolute grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 xl:gap-x-48 md:gap-3 xl:w-full space-y-5 xl:space-y-8 pt-24 px-10 xl:px-20 xl:-ml-10">
+        <div className="absolute grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 xl:gap-x-20 md:gap-5 md:ml-10 space-y-5 xl:space-y-8 pt-24 px-10 xl:pl-8 xl:pr-0">
           <div className="absolute w-40 h-40 bg-slate-800 rounded-full z-0 xl:right-52 top-64 "></div>
           <div className="absolute w-80 h-80 bg-slate-800 rounded-full z-0 xl:right-20 bottom-32 "></div>
           <div className="absolute w-60 h-60 bg-slate-800 rounded-full z-0 xl:left-[280px] top-[550px] "></div>
@@ -34,7 +34,7 @@ const Services = () => {
               alt=""
             />
             <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-              Frontend Development
+              Frontend Dev
             </h2>
             <p className="m-4 text-lg p-4 leading-relaxed text-center ">
               Creating web pages that will take your business to a professional
@@ -115,7 +115,7 @@ const Services = () => {
               alt=""
             />
             <h2 className="text-center text-3xl mt-8 font-bold min-h-18 px-12">
-              WebApp Development
+              WebApp Dev
             </h2>
             <p className="m-4 text-lg p-4 leading-relaxed text-center ">
               Explore the possibility of more customers by taking your business

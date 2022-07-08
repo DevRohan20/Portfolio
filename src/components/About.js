@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="w-full text-slate-100 bg-gray-900 lg:pt-36 xl:pb-80 h-[1000px] mt-[3250px] xl:mt-[750px] md:mt-[1000px] h-full md:pb-20"
+      className="w-full text-slate-100 bg-gray-900 lg:pt-36 xl:pb-80 h-[1000px] mt-[3250px] xl:mt-[750px] md:mt-[1200px] h-full md:pb-20 xl:px-28"
     >
       <motion.div
         initial={"offScreen"}

@@ -18,10 +18,10 @@ const Projects = () => {
     >
       <main
         id="Projects"
-        className="bg-slate-800 text-slate-100 text-center lg:text-start md:text-center w-screen lg:-ml-10 lg:pt-40 md:pt-32 lg:pb-80 md:h-screen"
+        className="bg-slate-800 text-slate-100 text-center lg:text-start md:text-center w-screen xl:pl-20 lg:-ml-10 lg:pt-40 md:pt-32 lg:pb-80 md:h-screen"
       >
         <div className="relative max-w-screen-lg p-4 mx-auto flex flex-col justify-start w-screen h-screen lg:ml-44 pl-10 xl:pl-5">
-          <div className="absolute pb-8 z-10 pl-5 xl:pl-0 md:pl-80">
+          <div className="absolute pb-8 z-10 pl-5 xl:pl-0 md:pl-56">
             <p className="text-4xl sm:text-5xl md:text-6xl font-bold inline border-b-4 border-violet-500 xl:ml-0 ml-16">
               Projects
             </p>

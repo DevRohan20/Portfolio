@@ -23,13 +23,13 @@ function Header() {
             <motion.h1
               variants={Animation}
               transition={{ delay: 1 }}
-              className="pl-20 font-bold text-2xl cursor-pointer text-slate-100"
+              className="xl:pl-52 pl-10 font-bold text-2xl cursor-pointer text-slate-100"
             >
               DevRohan<span className="text-violet-500">.io</span>
             </motion.h1>
           </div>
 
-          <div className="flex items-center mx-10 justify-end w-full">
+          <div className="flex items-center mx-10 justify-end w-full xl:pr-32">
             <div className="hidden md:block">
               <div className="flex justify-between items-center items-center space-x-6">
                 <motion.div variants={Animation} transition={{ delay: 1.5 }}>
@@ -101,7 +101,7 @@ function Header() {
                 </motion.div>
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-5 flex md:hidden">
               <motion.button
                 variants={Animation}
                 transition={{ delay: 1.5 }}
